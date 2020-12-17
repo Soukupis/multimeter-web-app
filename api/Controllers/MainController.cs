@@ -7,19 +7,27 @@ using System.Threading.Tasks;
 
 namespace api.Controllers
 {
-    public class MainController
+    [ApiController]
+    [Route("[controller]")]
+    public class MainController : ControllerBase
     {
 
-        private static readonly string[] Summaries = new[]
+        private static readonly string[] Modes = new[]
         {
             "MIC", "TEMP", "PHOTO", "TRIM1", "TRIM2", "TRIM3"
         };
-
+        [Route("getPorts")]
         [HttpGet]
-        public Task<string[]> Get()
+        public string[] GetPorts()
         {
             string[] ports = SerialPort.GetPortNames();
             return ports;
+        }
+        [Route("getModes")]
+        [HttpGet]
+        public string[] GetModes()
+        {
+            return Modes;
         }
     }
 }
