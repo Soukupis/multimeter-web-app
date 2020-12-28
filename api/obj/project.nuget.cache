@@ -1,19 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "eBorBcajKGybRGCgCwrjp4izisoI8lmG3wHm/a7mGgON8SoRvxyklikFa5s2vPhA9YVrz1peB2H1t3gUJ9Rrow==",
+  "dgSpecHash": "qA2qdf1RUjGIu4tJGmm8JIMqXe/iXEhZmSY+gkmmXby2xyDeuSLMSGLvk8PlCVtaQf7od6E6pWfde0yqPAESjg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\MultimeterWebApp\\api\\api.csproj",
+  "projectFilePath": "/Users/josephsoukup/DocumentsLocal/MultimeterWebApp/api/api.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\runtime.linux-arm.runtime.native.system.io.ports\\5.0.0-rtm.20519.4\\runtime.linux-arm.runtime.native.system.io.ports.5.0.0-rtm.20519.4.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\runtime.linux-arm64.runtime.native.system.io.ports\\5.0.0-rtm.20519.4\\runtime.linux-arm64.runtime.native.system.io.ports.5.0.0-rtm.20519.4.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\runtime.linux-x64.runtime.native.system.io.ports\\5.0.0-rtm.20519.4\\runtime.linux-x64.runtime.native.system.io.ports.5.0.0-rtm.20519.4.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\runtime.native.system.io.ports\\5.0.0\\runtime.native.system.io.ports.5.0.0.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\runtime.osx-x64.runtime.native.system.io.ports\\5.0.0-rtm.20519.4\\runtime.osx-x64.runtime.native.system.io.ports.5.0.0-rtm.20519.4.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\system.io.ports\\5.0.0\\system.io.ports.5.0.0.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\system.security.accesscontrol\\5.0.0\\system.security.accesscontrol.5.0.0.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512"
+    "/Users/josephsoukup/.nuget/packages/microsoft.netcore.platforms/5.0.0/microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "/Users/josephsoukup/.nuget/packages/microsoft.win32.registry/5.0.0/microsoft.win32.registry.5.0.0.nupkg.sha512",
+    "/Users/josephsoukup/.nuget/packages/runtime.linux-arm.runtime.native.system.io.ports/5.0.0-rtm.20519.4/runtime.linux-arm.runtime.native.system.io.ports.5.0.0-rtm.20519.4.nupkg.sha512",
+    "/Users/josephsoukup/.nuget/packages/runtime.linux-arm64.runtime.native.system.io.ports/5.0.0-rtm.20519.4/runtime.linux-arm64.runtime.native.system.io.ports.5.0.0-rtm.20519.4.nupkg.sha512",
+    "/Users/josephsoukup/.nuget/packages/runtime.linux-x64.runtime.native.system.io.ports/5.0.0-rtm.20519.4/runtime.linux-x64.runtime.native.system.io.ports.5.0.0-rtm.20519.4.nupkg.sha512",
+    "/Users/josephsoukup/.nuget/packages/runtime.native.system.io.ports/5.0.0/runtime.native.system.io.ports.5.0.0.nupkg.sha512",
+    "/Users/josephsoukup/.nuget/packages/runtime.osx-x64.runtime.native.system.io.ports/5.0.0-rtm.20519.4/runtime.osx-x64.runtime.native.system.io.ports.5.0.0-rtm.20519.4.nupkg.sha512",
+    "/Users/josephsoukup/.nuget/packages/system.io.ports/5.0.0/system.io.ports.5.0.0.nupkg.sha512",
+    "/Users/josephsoukup/.nuget/packages/system.security.accesscontrol/5.0.0/system.security.accesscontrol.5.0.0.nupkg.sha512",
+    "/Users/josephsoukup/.nuget/packages/system.security.principal.windows/5.0.0/system.security.principal.windows.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }
