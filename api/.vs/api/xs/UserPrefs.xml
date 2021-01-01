@@ -1,22 +1,26 @@
 ﻿<Properties StartupConfiguration="{B9C3D128-DB1F-4756-ACD5-F990D4E7604D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="library/SerialPortConector.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/MainController.cs">
     <Files>
-      <File FileName="Controllers/MainController.cs" Line="24" Column="1" />
+      <File FileName="Controllers/MainController.cs" Line="27" Column="10" />
       <File FileName="Startup.cs" />
       <File FileName="appsettings.json" />
       <File FileName="Program.cs" />
       <File FileName="Properties/launchSettings.json" />
-      <File FileName="Models/WriteModel.cs" Line="6" Column="42" />
-      <File FileName="library/SerialPortConector.cs" Line="6" Column="31" />
+      <File FileName="Models/WriteModel.cs" Line="6" Column="8" />
+      <File FileName="library/SerialPortConector.cs" Line="46" Column="33" />
+      <File FileName="Models/SerialConnectorModel.cs" Line="6" Column="9" />
+      <File FileName="Models/dataModel.cs" Line="7" Column="26" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="api" expanded="True">
             <Node name="api" expanded="True">
-              <Node name="library" expanded="True">
-                <Node name="SerialPortConector.cs" selected="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="MainController.cs" selected="True" />
               </Node>
+              <Node name="library" expanded="True" />
+              <Node name="Models" expanded="True" />
             </Node>
           </Node>
         </State>

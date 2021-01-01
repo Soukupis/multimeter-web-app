@@ -7,8 +7,16 @@ namespace api.library
 {
     public class SerialPortConnector
     {
-        private readonly int _baundRate = 115200;
-        private readonly string _portName = "/dev/cu.usbserial-141220";
+        private readonly int _baundRate;//115200;
+        private readonly int _number;
+        private readonly string _portName; //"/dev/cu.usbserial-141220";
+        public SerialPortConnector(int boundRate, string portName)
+        {
+            _portName = portName;
+            _baundRate = boundRate;
+        }
+        
+        
 
         public string[] Send(int cislo, int pocetCisel)
         {
@@ -16,7 +24,7 @@ namespace api.library
             {
                 serialPort.Open();
                 Thread.Sleep(100);
-                string[] seznam = new string[26];
+                string[] seznam = new string[pocetCisel];
                 bool loop = true;
                 int count = 0;
                 while (loop)
@@ -35,7 +43,7 @@ namespace api.library
                         seznam[count] = temp;
                         count++;
                     }
-                    if (count > 25)
+                    if (count >= pocetCisel)
                     {
                         return seznam;
                     }

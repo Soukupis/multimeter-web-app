@@ -19,27 +19,45 @@ namespace api.Controllers
             "MIC", "TEMP", "PHOTO", "TRIM1", "TRIM2", "TRIM3"
         };
 
-        private SerialPortConnector _serialPortConnector;
-        public MainController()
-        {
-            _serialPortConnector = new SerialPortConnector();
-        }
+        private static SerialPortConnector _serialPortConnector;
+
         [Route("getData")]
-        [HttpGet]
-        public string[] getData()
+        [HttpPost]
+        public IActionResult getData([FromBody] DataModel input)
         {
-         
+            if(_serialPortConnector != null)
+            {
+                try
+                {
+                    string[] seznam = _serialPortConnector.Send(input.number,input.length);
+                    return Ok(seznam);
+                }
+                catch (Exception)
+                {
+                    return BadRequest("failed");
+                }
+            }
+            else
+            {
+                return BadRequest("no port settings");
+            }
+            
+        }
+        [Route("portSettings")]
+        [HttpPost]
+        public IActionResult portSettings([FromBody] SerialConnectorModel input)
+        {
             try
             {
-                string[] seznam = _serialPortConnector.Send(4, 150);
-                return seznam;
+                _serialPortConnector = new SerialPortConnector(input.baundRate, input.portName);
+                return Ok("port created");
             }
-            catch(Exception)
+            catch
             {
-                return null;
+                return BadRequest("failed");
             }
+            
         }
-
         
         [Route("getPorts")]
         [HttpGet]

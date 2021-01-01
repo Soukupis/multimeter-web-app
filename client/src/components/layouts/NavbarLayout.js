@@ -1,28 +1,22 @@
-import React, { useState } from "react";
+import React from "react";
 
 import {
   Navbar,
   Nav,
   NavItem,
   NavLink,
-  NavbarToggler,
-  Collapse,
   NavbarBrand,
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-  NavbarText,
 } from "reactstrap";
 
 import { ReactComponent as Logo } from "../../assets/multimeter.svg";
 
 const NavbarLayout = () => {
-  const [collapsed, setCollapsed] = useState(true);
-
-  const toggleNavbar = () => setCollapsed(!collapsed);
   return (
-    <Navbar color="faded" light expand="sm" style={{ fontSize: "20pt" }}>
+    <Navbar color="faded" light expand="md" style={{ fontSize: "20pt" }}>
       <NavbarBrand href="/">
         <Logo style={{ height: "75px" }} />
       </NavbarBrand>

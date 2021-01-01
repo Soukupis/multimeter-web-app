@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import NavbarLayout from "./layouts/NavbarLayout";
 import { ReactComponent as Settings } from "../assets/settings.svg";
 import { ReactComponent as Statistics } from "../assets/statistics.svg";
