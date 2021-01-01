@@ -1,31 +1,32 @@
 import React from "react";
 
-import { Button, Container, Row, Col } from "reactstrap";
+import { Button, Container, Row, Col, Jumbotron } from "reactstrap";
 
 const Error = () => {
   return (
-    <Container style={{ color: "white" }}>
-      <Row style={{ fontSize: "70pt" }}>
-        <Col>Error:(</Col>
-      </Row>
-      <Row style={{ fontSize: "25pt" }}>
-        <Col>
-          Nastala nějaká chyba, buď se můžete vrátit zpět anebo chybu nahlašte
-          administrátorovi
-        </Col>
-      </Row>
+    <Container style={{ color: "black", marginTop: "50px" }}>
       <Row>
         <Col>
-          <Button
-            color="danger"
-            onClick={() => {
-              window.location.reload();
-            }}
-            style={{ marginTop: "10px" }}
-            size="lg"
-          >
-            Ok
-          </Button>
+          <Jumbotron>
+            <h1 className="display-3">Error:(</h1>
+            <hr className="my-2" />
+            <p style={{ fontSize: "25pt" }}>
+              Nastala nějaká chyba, buď se můžete vrátit zpět anebo chybu
+              nahlašte administrátorovi
+            </p>
+            <p className="lead">
+              <Button
+                color="danger"
+                onClick={() => {
+                  window.location.reload();
+                }}
+                style={{ marginTop: "10px" }}
+                size="lg"
+              >
+                Ok
+              </Button>
+            </p>
+          </Jumbotron>
         </Col>
       </Row>
     </Container>

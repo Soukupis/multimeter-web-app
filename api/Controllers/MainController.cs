@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using api.library;
+using api.Models;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.IO.Ports;
@@ -16,11 +18,35 @@ namespace api.Controllers
         {
             "MIC", "TEMP", "PHOTO", "TRIM1", "TRIM2", "TRIM3"
         };
+
+        private SerialPortConnector _serialPortConnector;
+        public MainController()
+        {
+            _serialPortConnector = new SerialPortConnector();
+        }
+        [Route("getData")]
+        [HttpGet]
+        public string[] getData()
+        {
+         
+            try
+            {
+                string[] seznam = _serialPortConnector.Send(4, 150);
+                return seznam;
+            }
+            catch(Exception)
+            {
+                return null;
+            }
+        }
+
+        
         [Route("getPorts")]
         [HttpGet]
         public string[] GetPorts()
         {
             string[] ports = SerialPort.GetPortNames();
+            Console.WriteLine(ports.Length);
             return ports;
         }
         [Route("getModes")]
@@ -29,5 +55,7 @@ namespace api.Controllers
         {
             return Modes;
         }
+        
+
     }
 }
